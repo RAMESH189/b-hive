@@ -1,0 +1,170 @@
+  $primary: #FFC422;
+$secondary: #65624C;
+$price: #263238;
+$dayborder: #EEE7E7;
+$daybackground: #F9F9F9;
+
+  .workcard {
+      box-shadow: 0px 1.08px 8.63px 0px rgba(0, 0, 0, 0.06);
+      padding: 12px;
+      &:hover{
+        transform: scale(1.1);
+        transition: all 800ms ease-in;
+      }
+      .wrokcard-wrapper {
+        .card-address {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-bottom: 16px;
+          h3 {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24.2px;
+            text-align: left;
+          }
+          .map {
+            width: 52px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            align-items: center;
+            padding: 8px;
+            border: 0.5px solid #eee7e7;
+            background: $daybackground;
+            border-radius: 6.47px;
+            &:hover{
+                background: $dayborder;
+            }
+            img {
+              width: 18px;
+              object-fit: contain;
+            }
+            p {
+              font-size: 8px;
+              font-weight: 500;
+              line-height: 9.68px;
+              text-align: center;
+              margin-bottom: 0;
+
+              color: rgba($price, 0.5);
+            }
+          }
+        }
+        .card-thumbnail {
+          min-width: 346px;
+          width: 100%;
+          border-radius: 6px;
+          padding-bottom: 22px;
+          &:hover{
+            opacity: 0.8;
+            cursor: pointer;
+          }
+          img {
+            width: 100%;
+            object-fit: contain;
+            border-radius: 6px;
+          }
+        }
+        .card-buttons {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .daypass {
+            width: 167px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 6px;
+            padding: 9px;
+            border: $dayborder 1px solid;
+            background: $daybackground; ;
+            &:hover{
+                transform: scale(1.1);
+                transition: all ease-in 500ms;
+            }
+            .button-left {
+              display: flex;
+              flex-direction: column;
+              p {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 16.94px;
+                text-align: left;
+                color: #65624C;
+                margin-bottom: 8px;
+              }
+              .amount {
+                display: flex;
+                align-items: center;
+                h3 {
+                  font-size: 20px;
+                  font-weight: 600;
+                  line-height: 24.2px;
+                  text-align: left;
+                  margin-bottom: 0;
+                }
+                p {
+                  font-size: 12px;
+                  font-weight: 500;
+                  line-height: 14.52px;
+                  text-align: left;
+                  margin-bottom: 0;
+                }
+              }
+            }
+            .button-right {
+              img {
+              }
+            }
+          }
+          .bulkpass {
+            width: 167px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: $primary;
+            border: 1px solid $primary;
+            border-radius: 6px;
+            padding: 9px;
+            &:hover{
+                transform: scale(1.1);
+                transition: all ease-in 500ms;
+            }
+            .button-left {
+              display: flex;
+              flex-direction: column;
+              p {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 16.94px;
+                text-align: left;
+                margin-bottom: 8px;
+              }
+              .amount {
+                display: flex;
+                align-items: center;
+                h3 {
+                  font-size: 20px;
+                  font-weight: 600;
+                  line-height: 24.2px;
+                  text-align: left;
+                  margin-bottom: 0;
+                }
+                p {
+                  font-size: 12px;
+                  font-weight: 500;
+                  line-height: 14.52px;
+                  text-align: left;
+                  margin-bottom: 0;
+                }
+              }
+            }
+            .button-right {
+              img {
+              }
+            }
+          }
+        }
+      }
+    }

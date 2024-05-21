@@ -1,0 +1,21 @@
+:root {
+  --primary1: #0000;
+  --primary2: #FFBB00;
+}
+
+
+#root {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #F9F9F9;
+  font-family: Inter;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}

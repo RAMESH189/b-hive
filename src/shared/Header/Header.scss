@@ -1,0 +1,46 @@
+$primary: #FFBB00;
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 999 !important;
+    background: white;
+
+    .header-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        background: white;
+
+        .logo {
+            width: 125px;
+
+            img {
+                object-fit: contain;
+                width: 100%;
+            }
+        }
+
+        .phone {
+            width: 42px;
+            height: 42px;
+            background: white;
+            border: 1px solid $primary;
+            border-radius: 4px;
+
+            img {
+                width: 24px;
+                height: 24px;
+                object-fit: contain;
+            }
+        }
+    }
+
+}

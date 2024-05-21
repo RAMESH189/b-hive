@@ -1,0 +1,52 @@
+.whyChooseUs {
+  padding-bottom: 120px;
+  .header-whyChoose{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h3 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0.30000001192092896px;
+    text-align: left;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    @media screen and (max-width: 1200px) {
+      font-size: 32px;
+    }
+
+    @media screen and (max-width: 991px) {
+      font-size: 28px;
+      padding-bottom: 30px;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+    }
+  }
+  .arrow{
+    display: none;
+    @media screen and (max-width:991px) {
+      display: block;
+    }
+  }
+  }
+  
+
+  .facility-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    gap: 0;
+    width: 100%;
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (max-width: 991px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 17px;
+    }
+  }
+}

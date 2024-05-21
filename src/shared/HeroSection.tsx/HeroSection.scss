@@ -1,0 +1,93 @@
+$primary: #ffbb00;
+
+.herosection {
+  background-image: url("/image 1936.png");
+  .wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .title-wrapper {
+      // position: relative;
+      flex: 1;
+      @media screen and (max-width:767px) {
+        flex: unset;
+      }
+      h3 {
+        flex: 1.4;
+        font-size: 57px;
+        font-weight: 700;
+        line-height: 70.19px;
+        letter-spacing: -1px;
+        text-align: left;
+        z-index: 10;
+
+        p {
+          color: $primary;
+        }
+        @media screen and (max-width: 1200px) {
+          font-size: 38px;
+          font-weight: 700;
+          line-height: 50.19px;
+        }
+        @media screen and (max-width: 991px) {
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 30.19px;
+        }
+
+        
+      }
+      @media screen and (max-width: 767px) {
+          display: none;
+        }
+    }
+
+    .image-wrapper {
+      width: 388px;
+      // flex: 1; 
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      text-align: center;
+       @media screen and (max-width:767px) {
+          align-items: center;
+          flex: 1;
+        }
+      .img-hero {
+        width: 388px;
+        @media screen and (max-width:767px) {
+          width: 100%;
+        }
+        img {
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+
+      .title-sm {
+        display: none;
+        @media screen and (max-width: 767px) {
+          display: block;
+          font-size: 28px;
+          font-weight: 700;
+          line-height: 32.2px;
+          letter-spacing: -1px;
+          text-align: center;
+          p {
+          color: $primary;
+        }
+        }
+        @media screen and (max-width: 576px) {
+          display: block;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 24.2px;
+          letter-spacing: -1px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+.downloadApp-web {
+  padding-top: 122px;
+  padding-bottom: 40px;
+  display: block;
+  @media screen and (max-width: 991px) {
+    display: none;
+  }
+  .download-header {
+    padding-bottom: 122px;
+    padding-left: 70px;
+    color: #605f5f;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    @media screen and (max-width: 1400px) {
+      padding-left: 60px;
+    }
+    @media screen and (max-width: 1200px) {
+      padding-left: 35px;
+    }
+  }
+  .card-wrapper {
+    height: 265px !important;
+    display: flex !important;
+    flex-direction: row;
+    width: 100%;
+    padding: 40px;
+
+    .card-left {
+      flex: 1;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      img {
+        position: absolute;
+        bottom: -22%;
+        left: -18%;
+        width: 353px;
+        height: 380px;
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+    .card-right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .description {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 28px;
+        text-align: left;
+        color: #605f5f;
+        display: block;
+      }
+      .icons {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        width: 146px;
+
+        img {
+        }
+      }
+    }
+  }
+}
+
+.downloadApp-tab {
+  display: none;
+  @media screen and (max-width: 991px) {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    .download-header {
+        color: #605f5f;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 45px;
+      letter-spacing: 0.30000001192092896px;
+      text-align: left;
+    }
+    .card-wrapper {
+      padding: 15px !important;
+      .banner-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      .app-images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        gap: 25px;
+        width: 100%;
+        @media screen and (max-width: 576px) {
+          gap: 17px;
+          padding-top: 15px;
+        }
+        .app-image {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
