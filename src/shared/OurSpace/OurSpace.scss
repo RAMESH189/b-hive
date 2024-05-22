@@ -1,10 +1,37 @@
-$primary: #FFC422;
-$secondary: #65624C;
+$primary: #ffc422;
+$secondary: #65624c;
 $price: #263238;
-$dayborder: #EEE7E7;
-$daybackground: #F9F9F9;
+$dayborder: #eee7e7;
+$daybackground: #f9f9f9;
 
 .workspace {
+  .space-h-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h3 {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 45px;
+      letter-spacing: 0.30000001192092896px;
+      text-align: left;
+      @media screen and (max-width: 991px) {
+        font-size: 32px;
+      }
+      @media screen and (max-width: 767px) {
+        font-size: 28px;
+      }
+      @media screen and (max-width: 576px) {
+        font-size: 24px;
+      }
+    }
+    >img {
+      display: none;
+      @media screen and (max-width:991px) {
+        display: block;
+      }
+    }
+  }
   .workcard-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -12,15 +39,15 @@ $daybackground: #F9F9F9;
     row-gap: 61px;
     column-gap: 57px;
     padding-top: 40px;
-  @media screen and (max-width:1400px) {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 31px;
-    column-gap: 27px;
-  }
-  @media screen and (max-width:991px) {
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 31px;
-    column-gap: 27px;
-  }
+    @media screen and (max-width: 1400px) {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 31px;
+      column-gap: 27px;
+    }
+    @media screen and (max-width: 991px) {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 31px;
+      column-gap: 27px;
+    }
   }
 }

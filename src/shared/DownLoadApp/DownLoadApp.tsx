@@ -35,6 +35,7 @@ export default function DownLoadApp({}: Props) {
         <div className="card card-wrapper">
           <div className="banner-wrapper">
             <img src="/appbanner.png" alt="" />
+            {/* <img src="/appbackground.png" alt="" className="background" /> */}
           </div>
           <div className="app-images">
             <div className="app-image">

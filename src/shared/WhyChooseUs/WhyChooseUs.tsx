@@ -44,7 +44,9 @@ export default function WhyChooseUs({}: Props) {
       <div className="header-whyChoose">
         <h3>Why Choose us?</h3>
         <div className="arrow">
-          <img src="/arrow.png" alt="" />
+          <a href="https://bhiveworkspace.com/" target="_blank">
+            <img src="/arrow.png" alt="" />
+          </a>
         </div>
       </div>
       <div className="facility-wrapper">

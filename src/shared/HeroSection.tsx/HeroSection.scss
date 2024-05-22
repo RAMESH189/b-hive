@@ -2,6 +2,23 @@ $primary: #ffbb00;
 
 .herosection {
   background-image: url("/image 1936.png");
+  position: relative;
+  .background-hero {
+    position: absolute;
+    z-index: 99;
+    right: -1%;
+    align-self: stretch;
+    width: 480px;
+    opacity: 0.7;
+    height: 100%;
+    display: none;
+    @media screen and (max-width:1366px) {
+      display: block;
+    }
+    @media screen and (max-width:991px) {
+      display: none;
+    }
+  }
   .wrapper {
     display: flex;
     align-items: center;
@@ -10,7 +27,7 @@ $primary: #ffbb00;
     .title-wrapper {
       // position: relative;
       flex: 1;
-      @media screen and (max-width:767px) {
+      @media screen and (max-width: 767px) {
         flex: unset;
       }
       h3 {
@@ -35,49 +52,50 @@ $primary: #ffbb00;
           font-weight: 700;
           line-height: 30.19px;
         }
-
-        
       }
       @media screen and (max-width: 767px) {
-          display: none;
-        }
+        display: none;
+      }
     }
 
     .image-wrapper {
       width: 388px;
-      // flex: 1; 
+      // flex: 1;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       justify-content: center;
       text-align: center;
-       @media screen and (max-width:767px) {
-          align-items: center;
-          flex: 1;
-        }
+      // position: relative;
+      @media screen and (max-width: 767px) {
+        align-items: center;
+        flex: 1;
+      }
       .img-hero {
         width: 388px;
-        @media screen and (max-width:767px) {
+        @media screen and (max-width: 767px) {
           width: 100%;
         }
         img {
           width: 100%;
           object-fit: contain;
+          // z-index: -1;
         }
       }
 
       .title-sm {
         display: none;
         @media screen and (max-width: 767px) {
-          display: block;
+          display: flex;
+          gap: 10px;
           font-size: 28px;
           font-weight: 700;
           line-height: 32.2px;
           letter-spacing: -1px;
           text-align: center;
           p {
-          color: $primary;
-        }
+            color: $primary;
+          }
         }
         @media screen and (max-width: 576px) {
           display: block;

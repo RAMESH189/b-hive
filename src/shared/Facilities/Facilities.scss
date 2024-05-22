@@ -5,7 +5,7 @@
   width: 100% !important;
   min-height: 80px;
   padding: 10px;
-  background: #F9F9F9;
+  background: #E0E0E0;
   box-shadow: 0px 2px 4px 0px rgba(0, 0.03, 0.03, 0.03);
   @media screen and (max-width: 1200px) {
     width: 100%;
@@ -33,5 +33,21 @@
     line-height: 21.78px;
     text-align: left;
     color: #263238;
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16.94px;
+      text-align: center;
+    }
+     @media screen and (max-width: 337px) {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16.94px;
+      text-align: center;
+    }
   }
 }

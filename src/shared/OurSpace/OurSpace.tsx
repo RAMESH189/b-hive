@@ -1,19 +1,25 @@
 import WorkSpaceCard from "../WorkSpaceCard/WorkSpaceCard";
 import "./OurSpace.scss";
 import React from "react";
-export default function OurSpace(props: any) {
+export default function OurSpace() {
   return (
     <div className="container workspace">
-      <h3>Our Space Overview</h3>
+      <div className="space-h-wrapper">
+        <h3>Our Space Overview</h3>
+        <img src="arrow.png" alt="" />
+      </div>
       <div className="workcard-wrapper">
         {data?.map((item: any, index: number) => (
-          <WorkSpaceCard
-            address={item?.name}
-            thumbnail={item?.images}
-            navigation={item?.google_maps_url}
-            daypassprice={item?.day_pass_price}
-            percentageOff={item?.day_pass_discounts_percentage}
-          />
+          <React.Fragment key={index}>
+            <WorkSpaceCard
+              address={item?.name}
+              thumbnail={item?.images}
+              navigation={item?.google_maps_url}
+              daypassprice={item?.day_pass_price}
+              percentageOff={item?.day_pass_discounts_percentage}
+              frame={item?.frame}
+            />
+          </React.Fragment>
         ))}
       </div>
     </div>
@@ -38,6 +44,7 @@ const data: any = [
     rules: null,
     amenities: ["Conferencing facilities", "Parking"],
     images: ["/workspace1.png"],
+    frame: ["/f1.png"],
     working_hours_start: "00:00",
     working_hours_end: "23:59",
     contact_person_name: "Lavena",
@@ -72,6 +79,7 @@ const data: any = [
     rules: null,
     amenities: ["Conferencing facilities", "Parking"],
     images: ["/workspace2.png"],
+    frame: ["/f2.png"],
     working_hours_start: "00:00",
     working_hours_end: "23:59",
     facilities: null,
@@ -106,6 +114,7 @@ const data: any = [
     rules: null,
     amenities: ["Conferencing facilities", "Parking"],
     images: ["/workspace3.png"],
+    frame: ["/f3.png"],
     working_hours_start: "00:00",
     working_hours_end: "23:59",
     facilities: null,
@@ -140,6 +149,7 @@ const data: any = [
     rules: null,
     amenities: null,
     images: ["/workspace4.png"],
+    frame: ["/f4.png"],
     working_hours_start: "00:00",
     working_hours_end: "23:59",
     facilities: null,
@@ -173,6 +183,7 @@ const data: any = [
     rules: null,
     amenities: ["Conferencing facilities", "Parking"],
     images: ["/workspace5.png"],
+    frame: ["/f5.png"],
     working_hours_start: "00:00",
     working_hours_end: "23:59",
     facilities: null,
@@ -206,6 +217,7 @@ const data: any = [
     rules: null,
     amenities: ["Conferencing facilities", "Parking"],
     images: ["/workspace6.png"],
+    frame: ["/f6.png"],
     working_hours_start: "00:00",
     working_hours_end: "23:59",
     facilities: null,

@@ -1,7 +1,11 @@
 import "./WorkSpaceCard.scss";
 
 export default function WorkSpaceCard(props: any) {
-  const { address, thumbnail, navigation, daypassprice, percentageOff } = props;
+  const { address, thumbnail, navigation, daypassprice, percentageOff, frame } =
+    props;
+  console.log(percentageOff);
+  const price10 = daypassprice * 10
+  const discountPrice = (price10 * 20) / 100;
   return (
     <div className="workcard">
       <div className="wrokcard-wrapper">
@@ -15,6 +19,7 @@ export default function WorkSpaceCard(props: any) {
           </a>
         </div>
         <div className="card-thumbnail">
+          <img src={frame} alt="" className="feature"/>
           <img src={thumbnail} alt="" className="thumbnail" />
         </div>
         <div className="card-buttons">
@@ -31,11 +36,14 @@ export default function WorkSpaceCard(props: any) {
             </div>
           </button>
           <button className="bulkpass">
+            <div className="discount">
+              <p>{percentageOff[10].value} % Discount</p>
+            </div>
             <div className="button-left">
               <p>Bulk pass</p>
               <div className="amount">
-                <h3>$254</h3>
-                <p>/ day</p>
+                <h3>$ {discountPrice}</h3>
+                <p>/ 10 days</p>
               </div>
             </div>
             <div className="button-right">
